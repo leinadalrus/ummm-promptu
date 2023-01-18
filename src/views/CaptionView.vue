@@ -1,1 +1,7 @@
-<template></template>
+<script lang="ts">
+import Caption from '@/components/services/Caption.vue'
+</script>
+
+<template>
+  <Caption />
+</template>
