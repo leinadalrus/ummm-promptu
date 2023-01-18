@@ -12,6 +12,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@tauri-apps/api": "^1.2.0",
     "@videojs-player/vue": "^1.0.0",
     "pinia": "^2.0.28",
     "video.js": "^7.20.3",
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@playwright/test": "^1.28.1",
     "@rushstack/eslint-patch": "^1.1.4",
+    "@tauri-apps/cli": "^1.2.2",
     "@types/node": "^18.11.12",
     "@types/video.js": "^7.3.50",
     "@vitejs/plugin-vue": "^4.0.0",

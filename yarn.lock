@@ -192,6 +192,71 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz#8be36a1f66f3265389e90b5f9c9962146758f728"
   integrity sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==
 
+"@tauri-apps/api@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@tauri-apps/api/-/api-1.2.0.tgz#1f196b3e012971227f41b98214c846430a4eb477"
+  integrity sha512-lsI54KI6HGf7VImuf/T9pnoejfgkNoXveP14pVV7XarrQ46rOejIVJLFqHI9sRReJMGdh2YuCoI3cc/yCWCsrw==
+
+"@tauri-apps/cli-darwin-arm64@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@tauri-apps/cli-darwin-arm64/-/cli-darwin-arm64-1.2.2.tgz#f18b0689b399b64dc67da41c0fd4da474be324fe"
+  integrity sha512-W+Cp2weUMlvmGkRJeUjypbz9Lpl6o98xkgKAtobZSum5SNwpsBQfawJTESakNoD+FXyVg/snIk5sRdHge+tAaA==
+
+"@tauri-apps/cli-darwin-x64@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@tauri-apps/cli-darwin-x64/-/cli-darwin-x64-1.2.2.tgz#4450bd244f586da346651f62a5a41686cee36db7"
+  integrity sha512-vmVAqt+ECH2d6cbcGJ7ddcCAZgmKe5xmxlL5r4xoaphu7OqU4gnv4VFURYkVltOfwzIFQVOPVSqwYyIDToCYNQ==
+
+"@tauri-apps/cli-linux-arm-gnueabihf@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@tauri-apps/cli-linux-arm-gnueabihf/-/cli-linux-arm-gnueabihf-1.2.2.tgz#a4d5b95665620605fb0f54cb77f8134239b58370"
+  integrity sha512-yYTdQurgi4QZR8z+fANjl522jdQz/VtesFpw+C/A0+zXg7tiRjicsywBDdPsvNzCqFeGKKkmTR+Lny5qxhGaeQ==
+
+"@tauri-apps/cli-linux-arm64-gnu@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@tauri-apps/cli-linux-arm64-gnu/-/cli-linux-arm64-gnu-1.2.2.tgz#c992907586b42e2085160d45b3a17316c99febea"
+  integrity sha512-ZSOVT6Eq1ay2+27B8KfA0MnpO7KYzONU6TjenH7DNcQki6eWGG5JoNu8QQ9Mdn3dAzY0XBP9i1ZHQOFu4iPtEg==
+
+"@tauri-apps/cli-linux-arm64-musl@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@tauri-apps/cli-linux-arm64-musl/-/cli-linux-arm64-musl-1.2.2.tgz#f8bd7901ce525b8433919e2cfe7ec22aace0f776"
+  integrity sha512-/NHSkqNQ+Pr4PshvyD1CeNFaPCaCpe1OeuAQgVi0rboSecC9fXN96G5dQbSBoxOUcCo6f8aTVE7zkZ4WchFVog==
+
+"@tauri-apps/cli-linux-x64-gnu@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@tauri-apps/cli-linux-x64-gnu/-/cli-linux-x64-gnu-1.2.2.tgz#a558862d7101b0a641c5a994c9ee74edb8300fc5"
+  integrity sha512-4YTmfPuyvlHsvCkATDMwhklfuQm3HKxYXv/IOW9H0ra6pS9efVhrFYIC9Vfv6XaKN85Vnn/FYTEGMJLwCxZw2Q==
+
+"@tauri-apps/cli-linux-x64-musl@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@tauri-apps/cli-linux-x64-musl/-/cli-linux-x64-musl-1.2.2.tgz#573e965a638864a65b606783d3dbd34114939277"
+  integrity sha512-wr46tbscwFuCcA931R+ItOiUTT0djMmgKLd1HFCmFF82V9BKE2reIjr6O9l0NCXCo2WeD4pe3jA/Pt1dxDu+JA==
+
+"@tauri-apps/cli-win32-ia32-msvc@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@tauri-apps/cli-win32-ia32-msvc/-/cli-win32-ia32-msvc-1.2.2.tgz#0fe38283ffeb71acac6a6a317951dc75ec2d3dad"
+  integrity sha512-6VmbVJOWUZJK5/JKhb3mNFKrKGfq0KV7lJGumfN95WJgkHeyL61p8bZit+o6ZgUGUhrOabkAawhDkrRY+ZQhIw==
+
+"@tauri-apps/cli-win32-x64-msvc@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@tauri-apps/cli-win32-x64-msvc/-/cli-win32-x64-msvc-1.2.2.tgz#9b8ea7c63f2883af105e204fc4f1f11a83990a59"
+  integrity sha512-YRPJguJma+zSuRZpFoSZqls6+laggG1vqG0FPQWQTi+ywATgMpai2b2RZnffDlpHKp9mt4V/s2dtqOy6bpGZHg==
+
+"@tauri-apps/cli@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@tauri-apps/cli/-/cli-1.2.2.tgz#cf7cb90d11c3c3b757efe07b7e2c48abde045ada"
+  integrity sha512-D8zib3A0vWCvPPSyYLxww/OdDlVcY7fpcDVBH6qUvheOjj2aCyU7H9AYMRBwpgCfz8zY5+vomee+laLeB0H13w==
+  optionalDependencies:
+    "@tauri-apps/cli-darwin-arm64" "1.2.2"
+    "@tauri-apps/cli-darwin-x64" "1.2.2"
+    "@tauri-apps/cli-linux-arm-gnueabihf" "1.2.2"
+    "@tauri-apps/cli-linux-arm64-gnu" "1.2.2"
+    "@tauri-apps/cli-linux-arm64-musl" "1.2.2"
+    "@tauri-apps/cli-linux-x64-gnu" "1.2.2"
+    "@tauri-apps/cli-linux-x64-musl" "1.2.2"
+    "@tauri-apps/cli-win32-ia32-msvc" "1.2.2"
+    "@tauri-apps/cli-win32-x64-msvc" "1.2.2"
+
 "@types/json-schema@^7.0.9":
   version "7.0.11"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.11.tgz#d421b6c527a3037f7c84433fd2c4229e016863d3"
@@ -300,17 +365,17 @@
   resolved "https://registry.yarnpkg.com/@videojs-player/vue/-/vue-1.0.0.tgz#df7db677b43b2d9b6872e71cd0eb2238cc19a8fd"
   integrity sha512-WonTezRfKu3fYdQLt/ta+nuKH6gMZUv8l40Jke/j4Lae7IqeO/+lLAmBnh3ni88bwR+vkFXIlZ2Ci7VKInIYJg==
 
-"@videojs/http-streaming@2.14.3":
-  version "2.14.3"
-  resolved "https://registry.yarnpkg.com/@videojs/http-streaming/-/http-streaming-2.14.3.tgz#3277e03b576766decb4fc663e954e18bfa10d2a1"
-  integrity sha512-2tFwxCaNbcEZzQugWf8EERwNMyNtspfHnvxRGRABQs09W/5SqmkWFuGWfUAm4wQKlXGfdPyAJ1338ASl459xAA==
+"@videojs/http-streaming@2.15.1":
+  version "2.15.1"
+  resolved "https://registry.yarnpkg.com/@videojs/http-streaming/-/http-streaming-2.15.1.tgz#f559f155b2c8400af10d767d4e134971c71b1344"
+  integrity sha512-/uuN3bVkEeJAdrhu5Hyb19JoUo3CMys7yf2C1vUjeL1wQaZ4Oe8JrZzRrnWZ0rjvPgKfNLPXQomsRtgrMoRMJQ==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@videojs/vhs-utils" "3.0.5"
     aes-decrypter "3.1.3"
     global "^4.4.0"
-    m3u8-parser "4.7.1"
-    mpd-parser "0.21.1"
+    m3u8-parser "4.8.0"
+    mpd-parser "^0.22.1"
     mux.js "6.0.1"
     video.js "^6 || ^7"
 
@@ -498,10 +563,10 @@
   resolved "https://registry.yarnpkg.com/@vue/tsconfig/-/tsconfig-0.1.3.tgz#4a61dbd29783d01ddab504276dcf0c2b6988654f"
   integrity sha512-kQVsh8yyWPvHpb8gIc9l/HIDiiVUy1amynLNpCy8p+FoCiZXCo6fQos5/097MmnNZc9AtseDsCrfkhqCrJ8Olg==
 
-"@xmldom/xmldom@^0.7.2":
-  version "0.7.9"
-  resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.7.9.tgz#7f9278a50e737920e21b297b8a35286e9942c056"
-  integrity sha512-yceMpm/xd4W2a85iqZyO09gTnHvXF6pyiWjD2jcOJs7hRoZtNNOO1eJlhHj1ixA+xip2hOyGn+LgcvLCMo5zXA==
+"@xmldom/xmldom@^0.8.3":
+  version "0.8.6"
+  resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.8.6.tgz#8a1524eb5bd5e965c1e3735476f0262469f71440"
+  integrity sha512-uRjjusqpoqfmRkTaNuLJ2VohVr67Q5YwDATW3VU7PfzTj6IRaihGrYI7zckGZjxQPBIp63nfvJbM+Yu5ICh0Bg==
 
 acorn-jsx@^5.3.2:
   version "5.3.2"
@@ -1498,10 +1563,10 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
-m3u8-parser@4.7.1:
-  version "4.7.1"
-  resolved "https://registry.yarnpkg.com/m3u8-parser/-/m3u8-parser-4.7.1.tgz#d6df2c940bb19a01112a04ccc4ff44886a945305"
-  integrity sha512-pbrQwiMiq+MmI9bl7UjtPT3AK603PV9bogNlr83uC+X9IoxqL5E4k7kU7fMQ0dpRgxgeSMygqUa0IMLQNXLBNA==
+m3u8-parser@4.8.0:
+  version "4.8.0"
+  resolved "https://registry.yarnpkg.com/m3u8-parser/-/m3u8-parser-4.8.0.tgz#4a2d591fdf6f2579d12a327081198df8af83083d"
+  integrity sha512-UqA2a/Pw3liR6Df3gwxrqghCP17OpPlQj6RBPLYygf/ZSQ4MoSgvdvhvt35qV+3NaaA0FSZx93Ix+2brT1U7cA==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@videojs/vhs-utils" "^3.0.5"
@@ -1553,14 +1618,14 @@ minimatch@^5.1.1:
   dependencies:
     brace-expansion "^2.0.1"
 
-mpd-parser@0.21.1:
-  version "0.21.1"
-  resolved "https://registry.yarnpkg.com/mpd-parser/-/mpd-parser-0.21.1.tgz#4f4834074ed0a8e265d8b04a5d2d7b5045a4fa55"
-  integrity sha512-BxlSXWbKE1n7eyEPBnTEkrzhS3PdmkkKdM1pgKbPnPOH0WFZIc0sPOWi7m0Uo3Wd2a4Or8Qf4ZbS7+ASqQ49fw==
+mpd-parser@0.22.1, mpd-parser@^0.22.1:
+  version "0.22.1"
+  resolved "https://registry.yarnpkg.com/mpd-parser/-/mpd-parser-0.22.1.tgz#bc2bf7d3e56368e4b0121035b055675401871521"
+  integrity sha512-fwBebvpyPUU8bOzvhX0VQZgSohncbgYwUyJJoTSNpmy7ccD2ryiCvM7oRkn/xQH5cv73/xU7rJSNCLjdGFor0Q==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@videojs/vhs-utils" "^3.0.5"
-    "@xmldom/xmldom" "^0.7.2"
+    "@xmldom/xmldom" "^0.8.3"
     global "^4.4.0"
 
 ms@2.1.2:
@@ -2163,19 +2228,19 @@ validate-npm-package-license@^3.0.1:
     spdx-expression-parse "^3.0.0"
 
 "video.js@^6 || ^7", video.js@^7.20.3:
-  version "7.20.3"
-  resolved "https://registry.yarnpkg.com/video.js/-/video.js-7.20.3.tgz#5694741346dc683255993e5069daa15d4bacb646"
-  integrity sha512-JMspxaK74LdfWcv69XWhX4rILywz/eInOVPdKefpQiZJSMD5O8xXYueqACP2Q5yqKstycgmmEKlJzZ+kVmDciw==
+  version "7.21.1"
+  resolved "https://registry.yarnpkg.com/video.js/-/video.js-7.21.1.tgz#c018e1d0f0643661fcebd5ca355e9723cc82312a"
+  integrity sha512-AvHfr14ePDHCfW5Lx35BvXk7oIonxF6VGhSxocmTyqotkQpxwYdmt4tnQSV7MYzNrYHb0GI8tJMt20NDkCQrxg==
   dependencies:
     "@babel/runtime" "^7.12.5"
-    "@videojs/http-streaming" "2.14.3"
+    "@videojs/http-streaming" "2.15.1"
     "@videojs/vhs-utils" "^3.0.4"
     "@videojs/xhr" "2.6.0"
     aes-decrypter "3.1.3"
     global "^4.4.0"
     keycode "^2.2.0"
-    m3u8-parser "4.7.1"
-    mpd-parser "0.21.1"
+    m3u8-parser "4.8.0"
+    mpd-parser "0.22.1"
     mux.js "6.0.1"
     safe-json-parse "4.0.0"
     videojs-font "3.2.0"
