@@ -519,6 +519,17 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "src-tauri/src/main.rs",
+			"settings":
+			{
+				"buffer_size": 240,
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+			]
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -531,6 +542,26 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"packa install",
+				"Package Control: Install Package"
+			],
+			[
+				"packa remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"vue",
+				"Preferences: LSP-vue Settings"
+			],
+			[
+				"packa inst",
+				"Package Control: Install Package"
+			],
+			[
+				"packa in",
+				"Package Control: Install Package"
+			],
 			[
 				"setting",
 				"Preferences: Settings"
@@ -709,10 +740,13 @@
 	},
 	"expanded_folders":
 	[
-		"/F/Users/Amstel/sources/repos/snye-v"
+		"/F/Users/Amstel/sources/repos/snye-v",
+		"/F/Users/Amstel/sources/repos/snye-v/src-tauri",
+		"/F/Users/Amstel/sources/repos/snye-v/src-tauri/src"
 	],
 	"file_history":
 	[
+		"/F/Users/Amstel/sources/repos/snye-v/src/components/HelloWorld.vue"
 	],
 	"find":
 	{
@@ -751,6 +785,54 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src-tauri/src/main.rs",
+					"selected": true,
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 240,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								240,
+								240
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".:",
+									"selector": "source.rust"
+								},
+								{
+									"characters": ":.'(",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "rust-analyzer"
+								}
+							],
+							"lsp_active": true,
+							"lsp_hover_provider_count": 1,
+							"lsp_uri": "file:///F:/Users/Amstel/sources/repos/snye-v/src-tauri/src/main.rs",
+							"show_definitions": false,
+							"syntax": "Packages/Rust Enhanced/RustEnhanced.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
 			]
 		}
 	],

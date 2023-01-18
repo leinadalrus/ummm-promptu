@@ -1,0 +1,33 @@
+[package]
+name = "sklent_ftl"
+version = "0.1.0"
+edition = "2021"
+authors = ["boybulbousbemperor <sansanodaniels@gmail.com>", "leinadalrus <daniel.david.surla@gmail.com>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+encoding_rs = "0.8.31"
+fluent = "0.16.0"
+fluent-bundle = "0.15.2"
+fluent-fallback = "0.7.0"
+fluent-resmgr = "0.0.6"
+fluent-syntax = "0.11.0"
+lindera = "0.20.0"
+mdbook = "0.4.24"
+regex = "1.7.0"
+similar = "2.2.1"
+umya-spreadsheet = "0.8.6"
+unic-langid = "0.9.1"
+
+[workspace]
+members = [
+  "../src-tauri"
+]
+resolver = "2"
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
