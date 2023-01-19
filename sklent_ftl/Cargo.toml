@@ -21,9 +21,6 @@ umya-spreadsheet = "0.8.6"
 unic-langid = "0.9.1"
 
 [workspace]
-members = [
-  "../src-tauri"
-]
 resolver = "2"
 
 [profile.dev]

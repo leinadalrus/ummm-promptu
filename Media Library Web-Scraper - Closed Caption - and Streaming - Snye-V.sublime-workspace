@@ -523,7 +523,7 @@
 			"file": "src-tauri/src/main.rs",
 			"settings":
 			{
-				"buffer_size": 240,
+				"buffer_size": 235,
 				"line_ending": "Windows"
 			},
 			"undo_stack":
@@ -792,15 +792,15 @@
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 240,
+						"buffer_size": 235,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								240,
-								240
+								235,
+								235
 							]
 						],
 						"settings":
