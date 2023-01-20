@@ -5,12 +5,19 @@ import { createClient } from '@supabase/supabase-js'
 import App from './App.vue'
 import router from './router'
 
+// VueVideoPlayer
+import VueVideoPlayer from '@videojs-player/vue'
+import 'video.js/dist/video-js.css'
+
 import './assets/main.css'
 
 const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
+
+// VueVideoPlayer
+app.use(VueVideoPlayer)
 
 app.mount('#app')
 

@@ -1,10 +1,10 @@
 <script lang="ts">
-import VueVideoPlayer from '@/components/services/Player.vue'
+import Player from '@/components/services/Player.vue'
 
 export default {
   name: 'VideoExample',
   components: {
-    VueVideoPlayer
+    Player
   },
   data () {
     return {
@@ -13,7 +13,7 @@ export default {
         controls: true,
         sources: [
           {
-            src: '/resources/user/video.webm',
+            src: '@/private/assets/video.webm',
             type: 'video/webm'
           }
         ]
@@ -22,3 +22,8 @@ export default {
   }
 }
 </script>
+
+<!-- !Need to connect a database connector:
+- Data-driven by having it redirect into the API URL-
+-and then have it I/O from there
+-->
