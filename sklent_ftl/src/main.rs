@@ -19,7 +19,7 @@ use lindera::{
 use fluent::{FluentBundle, FluentResource};
 use unic_langid::LanguageIdentifier;
 
-struct QueryConfig {
+pub struct QueryConfig {
     /// we can't have &str or &'static str because it has to outlive-
     /// - the given scenario
     query: String, 
