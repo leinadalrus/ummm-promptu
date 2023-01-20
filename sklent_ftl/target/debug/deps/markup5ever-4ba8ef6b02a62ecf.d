@@ -1,0 +1,15 @@
+f:\users\Amstel\sources\repos\snye-v\sklent_ftl\target\debug\deps\markup5ever-4ba8ef6b02a62ecf.rmeta: C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\markup5ever-0.11.0\lib.rs C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\markup5ever-0.11.0\data\mod.rs C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\markup5ever-0.11.0\interface\mod.rs C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\markup5ever-0.11.0\interface\tree_builder.rs C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\markup5ever-0.11.0\serialize.rs C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\markup5ever-0.11.0\util\buffer_queue.rs C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\markup5ever-0.11.0\util\smallcharset.rs f:\users\Amstel\sources\repos\snye-v\sklent_ftl\target\debug\build\markup5ever-0da00fdc86998315\out/generated.rs f:\users\Amstel\sources\repos\snye-v\sklent_ftl\target\debug\build\markup5ever-0da00fdc86998315\out/named_entities.rs
+
+f:\users\Amstel\sources\repos\snye-v\sklent_ftl\target\debug\deps\markup5ever-4ba8ef6b02a62ecf.d: C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\markup5ever-0.11.0\lib.rs C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\markup5ever-0.11.0\data\mod.rs C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\markup5ever-0.11.0\interface\mod.rs C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\markup5ever-0.11.0\interface\tree_builder.rs C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\markup5ever-0.11.0\serialize.rs C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\markup5ever-0.11.0\util\buffer_queue.rs C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\markup5ever-0.11.0\util\smallcharset.rs f:\users\Amstel\sources\repos\snye-v\sklent_ftl\target\debug\build\markup5ever-0da00fdc86998315\out/generated.rs f:\users\Amstel\sources\repos\snye-v\sklent_ftl\target\debug\build\markup5ever-0da00fdc86998315\out/named_entities.rs
+
+C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\markup5ever-0.11.0\lib.rs:
+C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\markup5ever-0.11.0\data\mod.rs:
+C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\markup5ever-0.11.0\interface\mod.rs:
+C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\markup5ever-0.11.0\interface\tree_builder.rs:
+C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\markup5ever-0.11.0\serialize.rs:
+C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\markup5ever-0.11.0\util\buffer_queue.rs:
+C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\markup5ever-0.11.0\util\smallcharset.rs:
+f:\users\Amstel\sources\repos\snye-v\sklent_ftl\target\debug\build\markup5ever-0da00fdc86998315\out/generated.rs:
+f:\users\Amstel\sources\repos\snye-v\sklent_ftl\target\debug\build\markup5ever-0da00fdc86998315\out/named_entities.rs:
+
+# env-dep:OUT_DIR=f:\\users\\Amstel\\sources\\repos\\snye-v\\sklent_ftl\\target\\debug\\build\\markup5ever-0da00fdc86998315\\out

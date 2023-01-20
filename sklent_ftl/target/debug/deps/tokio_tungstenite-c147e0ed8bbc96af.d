@@ -1,0 +1,10 @@
+f:\users\Amstel\sources\repos\snye-v\sklent_ftl\target\debug\deps\tokio_tungstenite-c147e0ed8bbc96af.rmeta: C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\tokio-tungstenite-0.17.2\src\lib.rs C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\tokio-tungstenite-0.17.2\src\compat.rs C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\tokio-tungstenite-0.17.2\src\connect.rs C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\tokio-tungstenite-0.17.2\src\handshake.rs C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\tokio-tungstenite-0.17.2\src\stream.rs C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\tokio-tungstenite-0.17.2\src\tls.rs
+
+f:\users\Amstel\sources\repos\snye-v\sklent_ftl\target\debug\deps\tokio_tungstenite-c147e0ed8bbc96af.d: C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\tokio-tungstenite-0.17.2\src\lib.rs C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\tokio-tungstenite-0.17.2\src\compat.rs C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\tokio-tungstenite-0.17.2\src\connect.rs C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\tokio-tungstenite-0.17.2\src\handshake.rs C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\tokio-tungstenite-0.17.2\src\stream.rs C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\tokio-tungstenite-0.17.2\src\tls.rs
+
+C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\tokio-tungstenite-0.17.2\src\lib.rs:
+C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\tokio-tungstenite-0.17.2\src\compat.rs:
+C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\tokio-tungstenite-0.17.2\src\connect.rs:
+C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\tokio-tungstenite-0.17.2\src\handshake.rs:
+C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\tokio-tungstenite-0.17.2\src\stream.rs:
+C:\Users\danie\.cargo\registry\src\github.com-1ecc6299db9ec823\tokio-tungstenite-0.17.2\src\tls.rs:
