@@ -5,8 +5,6 @@ import { supabase } from '@/components/services/Client.vue';
 
 const session = ref()
 
-const props = defineProps(['session'])
-
 const loading = ref(true)
 const username = ref('')
 const website = ref('')
