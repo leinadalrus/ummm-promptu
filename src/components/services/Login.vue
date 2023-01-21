@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { supabase } from './Client.vue';
+import { supabase } from './Client.vue'
 
 const loading = ref(false)
 const email = ref('')
@@ -11,11 +11,10 @@ const handleLogin = async () => {
     const { error } = await supabase.auth.signInWithOtp({
       email: email.value
     })
-    if (error) throw error
-    alert('Check your email for the login link!')
+    if (error) throw Error('Check your email for the login link!')
   } catch (error) {
     if (error instanceof Error) {
-      alert(error.message)
+      throw Error(error.message)
     }
   } finally {
     loading.value = false
@@ -47,3 +46,5 @@ const handleLogin = async () => {
     </div>
   </form>
 </template>
+
+<!-- TODO(Daniel): Change alert functions -->

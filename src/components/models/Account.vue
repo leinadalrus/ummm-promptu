@@ -25,7 +25,7 @@ async function getProfile() {
       .eq('id', user.id)
       .single()
 
-    if (error && status !== 406) throw error
+    if (error && status !== 406) throw Error('Status error 406 is not equaled to')
 
     if (data) {
       username.value = data.username
@@ -33,7 +33,7 @@ async function getProfile() {
       avatar_url.value = data.avatar_url
     }
   } catch (error) {
-    error
+    Error('Status error caught in catch statement')
   } finally {
     loading.value = false
   }
@@ -54,9 +54,9 @@ async function updateProfile() {
 
     let { error } = await supabase.from('profiles').upsert(updates)
 
-    if (error) throw error
+    if (error) throw Error('Upsert function from database failed')
   } catch (error) {
-    error
+    Error('Profiles upsert encountered an error in catch')
   } finally {
     loading.value = false
   }
@@ -66,9 +66,9 @@ async function signOut() {
   try {
     loading.value = true
     let { error } = await supabase.auth.signOut()
-    if (error) throw error
+    if (error) throw Error('User signout failed')
   } catch (error) {
-    error
+    Error('User signout encountered an error in catch')
   } finally {
     loading.value = false
   }
