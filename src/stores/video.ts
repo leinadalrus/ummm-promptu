@@ -1,7 +1,5 @@
 import { defineStore, mapWritableState } from 'pinia'
 
-
-
 interface VideoInfo {
   source: string
   type: string

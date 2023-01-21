@@ -520,15 +520,12 @@
 	"buffers":
 	[
 		{
-			"file": "src-tauri/src/main.rs",
+			"file": "src/App.vue",
 			"settings":
 			{
-				"buffer_size": 235,
-				"line_ending": "Windows"
-			},
-			"undo_stack":
-			[
-			]
+				"buffer_size": 1544,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -787,41 +784,26 @@
 			[
 				{
 					"buffer": 0,
-					"file": "src-tauri/src/main.rs",
+					"file": "src/App.vue",
 					"selected": true,
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 235,
+						"buffer_size": 1544,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								235,
-								235
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": ".:",
-									"selector": "source.rust"
-								},
-								{
-									"characters": ":.'(",
-									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
-									"server": "rust-analyzer"
-								}
-							],
-							"lsp_active": true,
-							"lsp_hover_provider_count": 1,
-							"lsp_uri": "file:///F:/Users/Amstel/sources/repos/snye-v/src-tauri/src/main.rs",
-							"show_definitions": false,
-							"syntax": "Packages/Rust Enhanced/RustEnhanced.sublime-syntax",
+							"lsp_uri": "file:///F:/Users/Amstel/sources/repos/snye-v/src/App.vue",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
