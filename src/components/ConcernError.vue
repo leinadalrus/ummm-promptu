@@ -14,9 +14,9 @@ test.use({
 
 test('Check the concern of error message prop', () => {
   let array = new Array()
-  array.forEach(element => {
+  array.forEach((element: string) => {
     expect(() => {
-      checkConcerns
+      checkConcerns(element)
       throw Error('Error in: concern of error message prop')
     })
   })
