@@ -26,6 +26,7 @@
     "@playwright/test": "^1.28.1",
     "@rushstack/eslint-patch": "^1.1.4",
     "@tauri-apps/cli": "^1.2.2",
+    "@testing-library/vue": "^6.6.1",
     "@types/node": "^18.11.12",
     "@types/video.js": "^7.3.50",
     "@vitejs/plugin-vue": "^4.0.0",

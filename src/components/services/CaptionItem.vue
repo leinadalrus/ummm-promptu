@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { onMounted } from 'vue'
 import { read, write, utils, writeFileXLSX } from 'xlsx'
 import { writeBinaryFile } from '@tauri-apps/api/fs'
 import { open, save } from '@tauri-apps/api/dialog'

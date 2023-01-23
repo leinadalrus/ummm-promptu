@@ -1,4 +1,4 @@
-<script lang="ts">
+<script setup lang="ts">
 import VideoPlayer from '@/components/services/VideoPlayer.vue'
 </script>
 

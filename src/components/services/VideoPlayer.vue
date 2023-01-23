@@ -12,5 +12,23 @@ export default defineComponent({
 
 <!-- have database connection value of API URL here -->
 <template>
-  <video-player src="" post="" controls :loop="false" :volume="0.5" />
+  <video-player
+    :children="[]"
+    src=""
+    post=""
+    controls
+    :loop="false"
+    :volume="0.5"
+  >
+    <template v-slot="{ player, state }">
+      <div class="custom-player-controls">
+        <button @click="state.playing ? player.pause() : player.play()">
+          {{ state.playing ? 'Pause' : 'Play' }}
+        </button>
+        <button @click="player.muted(!state.muted)">
+          {{ state.muted ? 'UnMute' : 'Mute' }}
+        </button>
+      </div>
+    </template>
+  </video-player>
 </template>
