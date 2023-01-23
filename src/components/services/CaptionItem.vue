@@ -18,8 +18,8 @@ const translationData = [
     'Hallo Welt!',
     'Hallo Welt!',
     'undefined',
-    '100.0',
     '#B20'
+    '100.0',
   ]
 ]
 

@@ -525,7 +525,10 @@
 			{
 				"buffer_size": 1544,
 				"line_ending": "Unix"
-			}
+			},
+			"undo_stack":
+			[
+			]
 		}
 	],
 	"build_system": "",
@@ -796,8 +799,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								251,
+								251
 							]
 						],
 						"settings":
@@ -905,7 +908,7 @@
 		[
 			[
 				"",
-				"F:\\Users\\Amstel\\sources\\repos\\briochure_app\\Briochure App - Esoteric - Arbitrary - Authoring Tool.sublime-project"
+				"F:\\Users\\Amstel\\sources\\repos\\aeolis_arpg\\Aeolis Lies - Souls-like 101 ARPG.sublime-project"
 			]
 		],
 		"width": 380.0
