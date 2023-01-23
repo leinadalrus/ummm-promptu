@@ -18,8 +18,8 @@ const translationData = [
     'Hallo Welt!',
     'Hallo Welt!',
     'undefined',
-    '#B20'
-    '100.0',
+    '#B20',
+    '100.0'
   ]
 ]
 
@@ -54,17 +54,17 @@ class SpreadsheetModel {
   #rowResize: boolean = false
 }
 
-onMounted(async() => {
+onMounted(async () => {
   /* Download from https://sheetjs.com/pres.numbers */
-  const data = await fetch("@/user/resources/store/docs/");
-  const buffer = await data.arrayBuffer();
+  const data = await fetch('@/user/resources/store/docs/')
+  const buffer = await data.arrayBuffer()
 
   /* parse workbook */
-  const workbook = read(buffer);
+  const workbook = read(buffer)
 
   /* update data */
-  translations = utils.sheet_to_json(workbook.Sheets[workbook.SheetNames[0]]);
-});
+  translations = utils.sheet_to_json(workbook.Sheets[workbook.SheetNames[0]])
+})
 
 async function openFile() {
   /* show open file dialog */
