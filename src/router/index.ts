@@ -12,7 +12,7 @@ const router = createRouter({
     {
       path: '/player',
       name: 'player',
-      component: () => import('../views/PlayerView.vue')
+      component: () => import('../views/VideoPlayerView.vue')
     },
     {
       path: '/caption',
