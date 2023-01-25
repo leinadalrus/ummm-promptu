@@ -9,7 +9,7 @@ import router from './router'
 import VueVideoPlayer from '@videojs-player/vue'
 import 'video.js/dist/video-js.css'
 
-import './assets/main.css'
+import './style.css';
 
 const app = createApp(App)
 
