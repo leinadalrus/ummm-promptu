@@ -4,7 +4,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <div
-    class="mx-auto bg-zinc-800 bg-gradient-to-r from-zinc-500 via-gray-500 to-rose-400 shadow-md overflow-hidden"
+    class="pt-4 mx-auto hue-rotate-20 bg-zinc-800 bg-gradient-to-r from-zinc-500 via-gray-500 to-rose-400 shadow-md overflow-hidden"
   >
     <div class="md:flex">
       <div class="md:shrink-0 inline-block h-12 w-12 rounded-full ring-2 ring-white">

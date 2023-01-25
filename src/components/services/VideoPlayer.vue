@@ -14,7 +14,7 @@ export default defineComponent({
 <template>
   <main class="p-8">
     <article
-      class="py-16 px-4 max-w-sm mx-auto bg-zinc-800 space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6"
+      class="py-16 px-4 mx-auto rounded-tl-lg bg-zinc-800 space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6"
     >
       <ul role="list" class="p-6 divide-y divide-slate-200">
         <!-- Remove top/bottom padding when first/last child -->
@@ -30,7 +30,7 @@ export default defineComponent({
       </ul>
     </article>
     <article
-      class="py-16 px-4 max-w-sm mx-auto bg-zinc-800 rounded-bl-lg shadow-b-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6"
+      class="py-16 px-4 mx-auto bg-zinc-800 shadow-b-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6"
     >
       <video-player
         :children="[]"
@@ -53,30 +53,42 @@ export default defineComponent({
       </video-player>
       <div class="text-center space-y-2 sm:text-left">
         <div class="space-y-0.5">
-          <p class="text-lg text-white font-bold">{{ 'Name' }}</p>
-          <p class="text-rose-300 font-medium">{{ 'By Captioner' }}</p>
+          <p class="text-lg text-white font-bold">{{ 'Transcript' }}</p>
+          <p class="text-rose-300 font-medium">{{ 'Caption' }}</p>
         </div>
       </div>
     </article>
-    <article class="p-32">
-      <div
-        class="py-16 px-4 max-w-sm mx-auto bg-zinc-800 space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6"
-      >
-        <table class="md:table-auto">
-          <thead>
-            <th>Name</th>
-            <th>Title</th>
-            <th>Email</th>
-          </thead>
-          <!-- ... -->
-          <tbody>
-            <tr>
-              <td>{{ 'person.name' }}</td>
-              <td>{{ 'person.title' }}</td>
-              <td>{{ 'person.email' }}</td>
-            </tr>
-          </tbody>
-        </table>
+    <article>
+      <div class="container mx-auto relative -right-32 -top-32">
+        <div
+          class="bg-zinc-900 rounded-b-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl"
+        >
+          <div>
+            <span
+              class="inline-flex items-center justify-center p-2 mb-4 mr-4 bg-indigo-500 rounded-md shadow-lg"
+            >{{ "localisation.flag" }}
+            </span>
+          </div>
+          <div
+            class="py-16 px-4 mx-auto rounded-b-lg bg-zinc-800 space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6"
+          >
+            <table class="md:table-auto">
+              <thead>
+                <th class="px-4">Original</th>
+                <th class="px-4">Preprocess</th>
+                <th class="px-4">Alternative</th>
+              </thead>
+              <!-- ... -->
+              <tbody>
+                <tr>
+                  <td class="px-4">{{ 'localisation.original' }}</td>
+                  <td class="px-4">{{ 'localisation.preprocess' }}</td>
+                  <td class="px-4">{{ 'localisation.alternative' }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </article>
   </main>
