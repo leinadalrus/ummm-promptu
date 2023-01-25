@@ -4,7 +4,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <div
-    class="mx-auto bg-zinc-900 shadow-md overflow-hidden"
+    class="mx-auto bg-zinc-800 bg-gradient-to-r from-zinc-500 via-slate-500 to-rose-400 shadow-md overflow-hidden"
   >
     <div class="md:flex">
       <div class="md:shrink-0 inline-block h-12 w-12 rounded-full ring-2 ring-white">
@@ -20,27 +20,27 @@ import { RouterLink, RouterView } from 'vue-router'
         <nav>
           <div class="mt-2 text-slate-500">
             <RouterLink
-              class="font-medium px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900"
+              class="font-medium px-3 py-2 rounded-tl-lg text-slate-700 hover:bg-rose-400 hover:text-gray-200"
               to="/"
               >Briochure</RouterLink
             >
             <RouterLink
-              class="font-medium px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900"
+              class="font-medium px-3 py-2 text-slate-700 hover:bg-rose-400 hover:text-gray-200"
               to="/player"
               >Watch</RouterLink
             >
             <RouterLink
-              class="font-medium px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900"
+              class="font-medium px-3 py-2 text-slate-700 hover:bg-rose-400 hover:text-gray-200"
               to="/caption"
               >Caption</RouterLink
             >
             <RouterLink
-              class="font-medium px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900"
+              class="font-medium px-3 py-2 text-slate-700 hover:bg-rose-400 hover:text-gray-200"
               to="/library"
               >Library</RouterLink
             >
             <RouterLink
-              class="font-medium px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900"
+              class="font-medium px-3 py-2 rounded-br-lg text-slate-700 hover:bg-rose-400 hover:text-gray-200"
               to="/about"
               >About</RouterLink
             >
