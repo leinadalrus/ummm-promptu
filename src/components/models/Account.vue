@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 
-import { supabase } from '@/components/client/supabaseClient.ts';
+import { supabase } from '../client/supabaseClient'
 
 const session = ref()
 
@@ -14,7 +14,7 @@ onMounted(() => {
   getProfile()
 })
 
-async function getProfile() {
+async function getProfile () {
   try {
     loading.value = true
     const { user } = session.value
@@ -25,7 +25,8 @@ async function getProfile() {
       .eq('id', user.id)
       .single()
 
-    if (error && status !== 406) throw Error('Status error 406 is not equaled to')
+    if (error && status !== 406)
+      throw Error('Status error 406 is not equaled to')
 
     if (data) {
       username.value = data.username
@@ -39,7 +40,7 @@ async function getProfile() {
   }
 }
 
-async function updateProfile() {
+async function updateProfile () {
   try {
     loading.value = true
     const { user } = session.value
@@ -62,7 +63,7 @@ async function updateProfile() {
   }
 }
 
-async function signOut() {
+async function signOut () {
   try {
     loading.value = true
     let { error } = await supabase.auth.signOut()
