@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 
-import { supabase } from '@/components/services/Client.vue';
+import { supabase } from '@/components/client/supabaseClient.ts';
 
 const session = ref()
 
