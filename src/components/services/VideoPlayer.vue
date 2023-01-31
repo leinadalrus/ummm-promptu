@@ -3,6 +3,8 @@ import { defineComponent } from 'vue'
 import { VideoPlayer } from '@videojs-player/vue'
 import 'video.js/dist/video-js.css'
 
+import CaptionItem from './CaptionItem.vue'
+
 export default defineComponent({
   components: {
     VideoPlayer
@@ -66,27 +68,13 @@ export default defineComponent({
           <div>
             <span
               class="inline-flex items-center justify-center p-2 mb-4 mr-4 bg-indigo-500 rounded-md shadow-lg"
-            >{{ "localisation.flag" }}
+              >{{ 'localisation.flag' }}
             </span>
           </div>
           <div
             class="py-16 px-4 mx-auto rounded-b-lg bg-zinc-800 space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6"
           >
-            <table class="md:table-auto">
-              <thead>
-                <th class="px-4">Original</th>
-                <th class="px-4">Preprocess</th>
-                <th class="px-4">Alternative</th>
-              </thead>
-              <!-- ... -->
-              <tbody>
-                <tr>
-                  <td class="px-4">{{ 'localisation.original' }}</td>
-                  <td class="px-4">{{ 'localisation.preprocess' }}</td>
-                  <td class="px-4">{{ 'localisation.alternative' }}</td>
-                </tr>
-              </tbody>
-            </table>
+            <CaptionItem />
           </div>
         </div>
       </div>

@@ -27,17 +27,17 @@ import { RouterLink, RouterView } from 'vue-router'
             <RouterLink
               class="font-medium px-3 py-2 text-slate-700 hover:bg-rose-400 hover:text-gray-200"
               to="/player"
-              >Watch</RouterLink
-            >
-            <RouterLink
-              class="font-medium px-3 py-2 text-slate-700 hover:bg-rose-400 hover:text-gray-200"
-              to="/caption"
-              >Caption</RouterLink
+              >Int'lization</RouterLink
             >
             <RouterLink
               class="font-medium px-3 py-2 text-slate-700 hover:bg-rose-400 hover:text-gray-200"
               to="/library"
               >Library</RouterLink
+            >
+            <RouterLink
+              class="font-medium px-3 py-2 text-slate-700 hover:bg-rose-400 hover:text-gray-200"
+              to="/account"
+              >Account</RouterLink
             >
             <RouterLink
               class="font-medium px-3 py-2 rounded-br-lg text-slate-700 hover:bg-rose-400 hover:text-gray-200"
