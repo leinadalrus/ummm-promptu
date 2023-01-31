@@ -15,14 +15,14 @@ const router = createRouter({
       component: () => import('../views/VideoPlayerView.vue')
     },
     {
-      path: '/caption',
-      name: 'caption',
-      component: () => import('../views/CaptionView.vue')
-    },
-    {
       path: '/library',
       name: 'library',
       component: () => import('../views/LibraryView.vue')
+    },
+    {
+      path: '/account',
+      name: 'account',
+      component: () => import('../views/AccountView.vue')
     },
     {
       path: '/about',
