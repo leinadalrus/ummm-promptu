@@ -7,8 +7,6 @@ const session = ref()
 
 const loading = ref(true)
 const username = ref('')
-const website = ref('')
-const avatar_url = ref('')
 
 onMounted(() => {
   getProfile()
@@ -21,7 +19,7 @@ async function getProfile () {
 
     let { data, error, status } = await supabase
       .from('profiles')
-      .select(`username, website, avatar_url`)
+      .select(`username`)
       .eq('id', user.id)
       .single()
 
@@ -30,8 +28,6 @@ async function getProfile () {
 
     if (data) {
       username.value = data.username
-      website.value = data.website
-      avatar_url.value = data.avatar_url
     }
   } catch (error) {
     Error('Status error caught in catch statement')
@@ -47,10 +43,7 @@ async function updateProfile () {
 
     const updates = {
       id: user.id,
-      username: username.value,
-      website: website.value,
-      avatar_url: avatar_url.value,
-      updated_at: new Date()
+      username: username.value
     }
 
     let { error } = await supabase.from('profiles').upsert(updates)
@@ -74,6 +67,15 @@ async function signOut () {
     loading.value = false
   }
 }
+
+module.exports = {
+  session,
+  loading,
+  username,
+  getProfile,
+  updateProfile,
+  signOut
+}
 </script>
 
 <template>
@@ -86,11 +88,6 @@ async function signOut () {
       <label for="username">Name</label>
       <input id="username" type="text" v-model="username" />
     </div>
-    <div>
-      <label for="website">Website</label>
-      <input id="website" type="website" v-model="website" />
-    </div>
-
     <div>
       <input
         type="submit"

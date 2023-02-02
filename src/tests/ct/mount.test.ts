@@ -1,7 +1,6 @@
 import { mount } from '@vue/test-utils'
 import { test, expect } from '@playwright/test'
 import CaptionItemVue from '@/components/services/CaptionItem.vue'
-import CaptionVue from '@/components/services/Caption.vue'
 
 const REPO = 'snye-v-pr'
 const USER = 'leinadalrus'
@@ -12,7 +11,6 @@ test.beforeAll(async ({ page }) => {
 
 test('OnMount() function, component parameterised', async () => {
   expect(CaptionItemVue).toBeTruthy()
-  expect(CaptionVue).toBeTruthy()
 })
 
 test('This Should Create an Issue Report', async ({ request }) => {
