@@ -74,6 +74,7 @@ export default defineComponent({
           <div
             class="py-16 px-4 mx-auto rounded-b-lg bg-zinc-800 space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6"
           >
+          <!-- Closed-Captioning component here:  -->
             <CaptionItem />
           </div>
         </div>
