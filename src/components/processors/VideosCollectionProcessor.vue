@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import { ref, watch } from 'vue'
+<script lang="ts">
+import { reactive, ref, watch } from 'vue'
 import { onMounted } from 'vue'
 
 onMounted(() => {})
@@ -17,8 +17,9 @@ watch(
   },
   { immediate: true }
 )
+
+export const storeVideos = reactive({
+  video: {},
+})
 </script>
 
-<template>
-  <input v-model="observedItem" />
-</template>
