@@ -1,11 +1,28 @@
 <script lang="ts">
+import { createClient, useQuery } from 'urql'
+import { supabase } from '../client/supabaseClient'
 import { reactive, ref, watch } from 'vue'
 import { onMounted } from 'vue'
 
-onMounted(() => {})
+// Get the Supabase Public Anon Key
+const SupabasePublicKey = process.env.SUPABASE_PUBLIC_KEY?.toString()
+
+// Prepare API key and Authorization header
+export const headers = {
+  apikey: SupabasePublicKey,
+  authorization: `Bearer ${SupabasePublicKey}`
+}
+
+// Create GraphQL client
+// See: https://formidable.com/open-source/urql/docs/basics/react-preact/#setting-up-the-client
+export const client = createClient({
+  url: '<SUPABASE_URL>/graphql/v1'
+  /*fetchOptions: function createFetchOptions() {
+    return { headers }
+  },*/
+})
 
 const observedItem = ref('videosCollection') // reference GraphQL query
-import { supabase } from '../client/supabaseClient'
 
 // Initialize the JS client
 const SupabasePostgresUri = process.env.SUPABASE_POSTGRES_URI?.toString()
@@ -39,4 +56,6 @@ const videosCollection = supabase
 export const storeVideos = reactive({
   videosCollection: { videosCollection }
 })
+
+onMounted(() => {})
 </script>
