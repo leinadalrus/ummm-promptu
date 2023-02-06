@@ -50,7 +50,7 @@ const handleLogin = async () => {
         <input
           type="submit"
           class="button block"
-          :value="loading ? 'Loading' : 'Send magic link'"
+          :value="loading ? 'Loading' : undefined"
           :disabled="loading"
         />
       </div>
