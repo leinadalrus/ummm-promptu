@@ -1,5 +1,5 @@
 import { useQuery } from 'urql'
-import { supabase } from '../../components/client/supabaseClient'
+import { supabase } from '../../client/supabaseClient'
 
 // Create a function to handle inserts
 const handleUpdates = (payload: any) => {
@@ -29,6 +29,8 @@ const VideosQuery = `
         node {
           id
           title
+          description
+          caption
         }
       }
     }

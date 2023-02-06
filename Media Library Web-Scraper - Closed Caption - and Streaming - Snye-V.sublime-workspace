@@ -523,12 +523,9 @@
 			"file": "src/App.vue",
 			"settings":
 			{
-				"buffer_size": 1544,
+				"buffer_size": 1728,
 				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-			]
+			}
 		}
 	],
 	"build_system": "",
@@ -792,15 +789,15 @@
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 1544,
+						"buffer_size": 1728,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								251,
-								251
+								0,
+								0
 							]
 						],
 						"settings":
@@ -908,7 +905,7 @@
 		[
 			[
 				"",
-				"F:\\Users\\Amstel\\sources\\repos\\aeolis_arpg\\Aeolis Lies - Souls-like 101 ARPG.sublime-project"
+				"F:\\Users\\Amstel\\sources\\repos\\valkanize_inventory_ecm\\Valkanize Inventory - micro-macro-manage inventory entities - ECM.sublime-project"
 			]
 		],
 		"width": 380.0
