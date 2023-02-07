@@ -1,5 +1,5 @@
 <script lang="ts">
-import { createClient } from 'urql'
+import { createClient, useQuery } from 'urql'
 import { supabase } from '../client/supabaseClient'
 import { reactive, ref, watch } from 'vue'
 import { onMounted } from 'vue'
@@ -23,24 +23,44 @@ export const client = createClient({
   },*/
 })
 
-const observedItem = ref('videosCollection') // reference GraphQL query
+// Create a function to handle inserts
+const handleUpdates = (payload: any) => {
+  console.log('Change received!', payload)
+}
+
+// Select column and its corresponding rows
+const { data: videos } = await supabase.from('videos').select('*')
+
+// Listen to updates
+const videoData = async (data: any) => {
+  await supabase.from('videos').update('videos')
+
+  handleUpdates(data)
+}
+
+// Prepare API key and Authorization header
+
+// Create GraphQL client
+// See: https://formidable.com/open-source/urql/docs/basics/react-preact/#setting-up-the-client
+
+// Prepare our GraphQL query
+const VideosQuery = `
+  query {
+    videosCollection {
+      edges {
+        node {
+          id
+          title
+          description
+          caption
+        }
+      }
+    }
+  }
+`
 
 // Initialize the JS client
 const SupabasePostgresUri = process.env.SUPABASE_POSTGRES_URI?.toString()
-
-watch(
-  observedItem,
-  async (incomingEvent, outgoingEvent) => {
-    // console args value is-equal-to 2
-    if (incomingEvent.lastIndexOf('2')) {
-      let response = await fetch(
-        SupabasePostgresUri + '/videosCollection/${videos.value}'
-      ) // fetch graphql api url VIP(Replace): replace 'todo' values
-      observedItem.value = await response.json()
-    }
-  },
-  { immediate: true }
-)
 
 // SUBSCRIBE TO ALL EVENTS
 const videosCollection = supabase
@@ -54,8 +74,29 @@ const videosCollection = supabase
   )
   .subscribe()
 
+  const observedItem = ref(videosCollection) // reference GraphQL query
+
+  watch(
+  observedItem,
+  async (incomingEvent, outgoingEvent) => {
+    // console args value is-equal-to 2
+    if (incomingEvent.topic == '/^videos.value$/') {
+      let response = await fetch(
+        SupabasePostgresUri + '/videosCollection/${videos.value}'
+      ) // fetch graphql api url VIP(Replace): replace 'todo' values
+      observedItem.value = await response.json()
+    }
+  },
+  { immediate: true }
+)
+
 export const storeVideos = reactive({
   videosCollection: { videosCollection }
+})
+
+// Query for the data (React)
+useQuery({
+  query: VideosQuery
 })
 
 onMounted(() => {})
