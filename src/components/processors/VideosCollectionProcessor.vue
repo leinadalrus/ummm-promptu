@@ -1,5 +1,5 @@
 <script lang="ts">
-import { createClient, useQuery } from 'urql'
+import { createClient } from 'urql'
 import { supabase } from '../client/supabaseClient'
 import { reactive, ref, watch } from 'vue'
 import { onMounted } from 'vue'
