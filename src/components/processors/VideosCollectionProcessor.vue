@@ -46,7 +46,7 @@ const videoData = async (data: any) => {
 // Prepare our GraphQL query
 const VideosQuery = `
   query {
-    videosCollection {
+    videos {
       edges {
         node {
           id
@@ -67,7 +67,7 @@ const videosCollection = supabase
   .channel('custom-all-channel')
   .on(
     'postgres_changes',
-    { event: '*', schema: 'public', table: 'videosCollection' },
+    { event: '*', schema: 'public', table: 'videos' },
     payload => {
       console.log('Change received!', payload)
     }
@@ -82,7 +82,7 @@ const videosCollection = supabase
     // console args value is-equal-to 2
     if (incomingEvent.topic == '/^videos.value$/') {
       let response = await fetch(
-        SupabasePostgresUri + '/videosCollection/${videos.value}'
+        SupabasePostgresUri + '/videos/${videos.value}'
       ) // fetch graphql api url VIP(Replace): replace 'todo' values
       observedItem.value = await response.json()
     }
@@ -90,8 +90,8 @@ const videosCollection = supabase
   { immediate: true }
 )
 
-export const storeVideos = reactive({
-  videosCollection: { videosCollection }
+export const videosReactiveComponent = reactive({
+  videosCollection
 })
 
 // Query for the data (React)

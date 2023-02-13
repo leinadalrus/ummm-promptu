@@ -24,7 +24,7 @@ const videoData = async (data: any) => {
 // Prepare our GraphQL query
 const VideosQuery = `
   query {
-    videosCollection {
+    videos {
       edges {
         node {
           id

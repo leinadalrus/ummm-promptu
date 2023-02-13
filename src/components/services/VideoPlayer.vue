@@ -4,6 +4,12 @@ import { VideoPlayer } from '@videojs-player/vue'
 import 'video.js/dist/video-js.css'
 
 import CaptionItem from './CaptionItem.vue'
+import { supabase } from '../client/supabaseClient'
+
+let { data: Videos } = await supabase
+  .from('videos')
+  .select()
+  .eq('id', '1')
 
 export default defineComponent({
   components: {
@@ -36,15 +42,15 @@ export default defineComponent({
     >
       <video-player
         :children="[]"
-        src=""
-        post=""
+        src="Videos"
+        poster="Videos.value == 'poster'"
         controls
         :loop="false"
         :volume="0.5"
       >
         <template v-slot="{ player, state }">
-          <div class="custom-player-controls">
-            <button @click="state.playing ? player.pause() : player.play()">
+          <div class="custom-player-controls text-justify-center">
+            <button class="p-2 m-1" @click="state.playing ? player.pause() : player.play()">
               {{ state.playing ? 'Pause' : 'Play' }}
             </button>
             <button @click="player.muted(!state.muted)">
@@ -61,14 +67,14 @@ export default defineComponent({
       </div>
     </article>
     <article>
-      <div class="container mx-auto relative -right-32 -top-32">
+      <div class="container mx-auto relative -right-8 -top-2">
         <div
           class="bg-zinc-900 rounded-b-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl"
         >
           <div>
             <span
               class="inline-flex items-center justify-center p-2 mb-4 mr-4 bg-indigo-500 rounded-md shadow-lg"
-              >{{ 'localisation.flag' }}
+              >{{ 'localization.flag' }}
             </span>
           </div>
           <div
