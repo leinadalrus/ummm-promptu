@@ -10,14 +10,14 @@ export default {
     const videoSources = reactive({ sources: streamCollection })
 
     function changeStream(sourceName: string) {
-      let Sourcing = videoSources.sources.keys.toString()
+      let sourceOptions = videoSources.sources.keys.toString()
         ? videoSources.sources.values.toString() === sourceName
         : sourceName
       videoSources.sources.forEach((sourceName) => {
-        if (!Sourcing) ifError(sourceName)
+        if (!sourceOptions) ifError(sourceName)
       })
 
-      return Sourcing
+      return sourceOptions
     }
 
     window.addEventListener(
@@ -30,6 +30,10 @@ export default {
       },
       false,
     )
+
+    function crawlScrapeFrom(sourceName: string) {
+      return sourceName
+    }
 
     // expose the state to the template
     return {
