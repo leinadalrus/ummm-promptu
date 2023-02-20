@@ -10,12 +10,13 @@ export default {
     const videoSources = reactive({ sources: streamCollection })
 
     function changeStream(sourceName: string) {
-      let Sourcing = videoSources.sources.keys.toString() ? videoSources.sources.values.toString() === sourceName : sourceName
-      videoSources.sources.forEach(sourceName => {
-        if (!(Sourcing))
-        ifError(sourceName)
+      let Sourcing = videoSources.sources.keys.toString()
+        ? videoSources.sources.values.toString() === sourceName
+        : sourceName
+      videoSources.sources.forEach((sourceName) => {
+        if (!Sourcing) ifError(sourceName)
       })
-        
+
       return Sourcing
     }
 
