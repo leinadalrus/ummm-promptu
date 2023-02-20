@@ -1,4 +1,4 @@
-import { createApp } from 'vue'
+import { createSSRApp } from 'vue'
 import { createPinia } from 'pinia'
 import { createClient } from '@supabase/supabase-js'
 
@@ -13,7 +13,7 @@ import './assets/base.css'
 
 import './style.css'
 
-const app = createApp(App)
+const app = createSSRApp(App)
 
 app.use(createPinia())
 app.use(router)
