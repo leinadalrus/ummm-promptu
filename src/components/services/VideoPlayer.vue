@@ -3,13 +3,7 @@ import { defineComponent } from 'vue'
 import { VideoPlayer } from '@videojs-player/vue'
 import 'video.js/dist/video-js.css'
 
-import CaptionItem from './CaptionItem.vue'
-import { supabase } from '../client/supabaseClient'
-
-let { data: Videos } = await supabase
-  .from('videos')
-  .select()
-  .eq('id', '1')
+import Caption from './Caption.vue'
 
 export default defineComponent({
   components: {
@@ -82,7 +76,7 @@ export default defineComponent({
           >
             <!-- Closed-Captioning template component here:  -->
             <template>
-              <CaptionItem />
+              <Caption />
             </template>
           </div>
         </div>

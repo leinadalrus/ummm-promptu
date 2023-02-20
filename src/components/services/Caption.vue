@@ -1,4 +1,4 @@
-<script lang="ts">
+<script setup lang="ts">
 import { onMounted } from 'vue'
 import { read, write, utils, writeFileXLSX } from 'xlsx'
 import { writeBinaryFile } from '@tauri-apps/api/fs'
@@ -66,7 +66,7 @@ onMounted(async () => {
   translations = utils.sheet_to_json(workbook.Sheets[workbook.SheetNames[0]])
 })
 
-export async function openFile() {
+async function openFile() {
   /* show open file dialog */
   const selected = await open({
     title: 'Open Spreadsheet',
@@ -83,7 +83,7 @@ export async function openFile() {
   return workbook
 }
 
-export async function saveFile(workbook: any) {
+async function saveFile(workbook: any) {
   /* show save file dialog */
   const selected = await save({
     title: 'Save to Spreadsheet',
@@ -121,3 +121,41 @@ if (inputs != null) {
   })
 }
 </script>
+
+<template>
+  <main>
+    <button @click="openFile">Open File</button>
+
+    <br />
+    <br />
+
+    <input
+      type="text"
+      id="formula-text-input"
+      name="formula_text_input"
+      minlength="1"
+      maxlength="32"
+      size="16"
+    />
+
+    <table>
+      <thead>
+        <th>ID</th>
+        <th>Original</th>
+        <th>Initial</th>
+        <th>Preprocess</th>
+        <th>Alternative</th>
+      </thead>
+      <tbody>
+        <tr v-for="(item, idx) in translations" :key="idx">
+          <td>{{ item }}</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <td colSpan="{2}">
+          <button @click="saveFile">Save File</button>
+        </td>
+      </tfoot>
+    </table>
+  </main>
+</template>

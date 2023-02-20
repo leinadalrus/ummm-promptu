@@ -1,11 +1,11 @@
 <script lang="ts">
 import App from '@/App.vue'
 import { mount } from '@vue/test-utils'
-import { test, expect } from '@playwright/test'
+import { test, expect } from 'vitest'
 
 type ConcernError = 'Ok' | 'Option' | 'Err'
 
-test.use({
+test.bind({
   viewport: {
     width: 800,
     height: 600
